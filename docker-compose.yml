@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  ravino:
+    image: blockchain:go
+    build:
+      context: .
+      dockerfile: .build/dev/Dockerfile
+    container_name: blockchain_app
+
